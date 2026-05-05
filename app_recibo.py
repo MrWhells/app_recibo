@@ -72,7 +72,7 @@ def gerar_pdf_pro(dados):
     pdf.set_font("Arial", "", 9)
     pdf.cell(190, 5, "CNPJ: 57.646.049/0001-33 | Contato: (21) 99209-9322", ln=1, align="C")
     
-    return bytes(pdf.output())
+    return pdf.output(dest='S').encode('latin-1')
 
 # --- INTERFACE REATIVA (SEM FORM) ---
 st.markdown("<h1 style='text-align: center; color: #BA55D3;'>JujuXerox Pro</h1>", unsafe_allow_html=True)
