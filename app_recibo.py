@@ -70,7 +70,7 @@ def gerar_pdf_pro(dados):
     pdf.set_font("Arial", "B", 11)
     pdf.cell(190, 7, "JULIE MANUELI DAMASIO DA SILVA", ln=1, align="C")
     pdf.set_font("Arial", "", 9)
-    pdf.cell(190, 5, "CNPJ: 57.646.049/0001-33 | Contato: (21) 99209-9322", ln=1, align="C")
+    pdf.cell(190, 5, "CNPJ: 57.646.049/0001-33 | Contato: (21) 98363-4553", ln=1, align="C")
     
     return pdf.output(dest='S').encode('latin-1')
 
